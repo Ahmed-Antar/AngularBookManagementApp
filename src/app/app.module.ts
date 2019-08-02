@@ -8,7 +8,7 @@ import { BookListComponent } from './book-list/book-list.component';
 import { SingleBookComponent } from './book-list/single-book/single-book.component';
 import { BookFormComponent } from './book-list/book-form/book-form.component';
 import { HeaderComponent } from './header/header.component';
-import { HttpClient } from 'selenium-webdriver/http';
+import { HttpClientModule } from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import {ReactiveFormsModule} from '@angular/forms';
 import { BooksService } from './services/books.service';
@@ -29,7 +29,7 @@ import { AuthGuardService } from './services/auth-guard.service';
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClient
+    HttpClientModule
   ],
   providers: [AuthService, BooksService, AuthGuardService],
   bootstrap: [AppComponent]
